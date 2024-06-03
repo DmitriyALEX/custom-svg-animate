@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-background {
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  background: -webkit-linear-gradient(90deg,#dfe9ed,#ffffff); 
+  background: linear-gradient(90deg,#c9e0e9,#ffffff); 
+}
+
+.title-line {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  text-wrap: nowrap;
+ /* font */
+ font-family: "Exo", sans-serif;
+ font-optical-sizing: auto;
+ font-size: 2rem;
+ font-style: normal;
+}
+
+.svg-star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* font */
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 100px;
+  font-style: normal;
+}
+
+#star path:nth-child(1){
+  stroke-dasharray: 589px;
+  stroke-dashoffset: 589px;
+  animation: anim-line-star 4s linear forwards;
+}
+
+#star path:nth-child(2){
+  stroke-dasharray: 708px;
+  stroke-dashoffset: 708px;
+  animation: anim-line-star 4s linear forwards;
+}
+
+#star path:nth-child(3){
+  stroke-dasharray: 897px;
+  stroke-dashoffset: 897px;
+  animation: anim-line-star 4s linear forwards;
+}
+
+@keyframes anim-line-star {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#left-line path:nth-child(1) {
+  stroke-dasharray: 477px;
+  stroke-dashoffset: 477px;
+  animation: left-anim-line 4s linear forwards;
+}
+
+@keyframes left-anim-line {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+#right-line {
+  stroke-dasharray: 477px;
+  stroke-dashoffset: 477px;
+  animation: right-anim-line 4s linear forwards;
+}
+
+@keyframes right-anim-line {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+/* description */
+#discription path:nth-child(1) {
+  stroke-dasharray: 250px;
+  stroke-dashoffset: 250px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(2) {
+  stroke-dasharray: 152px;
+  stroke-dashoffset: 152px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(3) {
+  stroke-dasharray: 155px;
+  stroke-dashoffset:155px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(4) {
+  stroke-dasharray: 152px;
+  stroke-dashoffset: 152px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(5) {
+  stroke-dasharray: 138px;
+  stroke-dashoffset: 138px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(6) {
+  stroke-dasharray: 215px;
+  stroke-dashoffset: 215px;
+  animation: description 10s linear forwards;
+}
+#discription path:nth-child(7) {
+  stroke-dasharray: 185px;
+  stroke-dashoffset: 185px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(8) {
+  stroke-dasharray: 129px;
+  stroke-dashoffset: 129px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(9) {
+  stroke-dasharray: 250px;
+  stroke-dashoffset: 250px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(10) {
+  stroke-dasharray: 144px;
+  stroke-dashoffset: 144px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(11) {
+  stroke-dasharray: 292px;
+  stroke-dashoffset: 292px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(12) {
+  stroke-dasharray: 91px;
+  stroke-dashoffset: 91px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(13) {
+  stroke-dasharray: 91px;
+  stroke-dashoffset: 91px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(14) {
+  stroke-dasharray: 140px;
+  stroke-dashoffset: 140px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(15) {
+  stroke-dasharray: 129px;
+  stroke-dashoffset: 129px;
+  animation: description 10s linear forwards;
+}
+
+#discription path:nth-child(15) {
+  stroke-dasharray: 185px;
+  stroke-dashoffset: 185px;
+  animation: description 10s linear forwards;
+}
+
+@keyframes description {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+.footer {
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-style: bold;
+}
+
+.reload-button {
+  background: transparent;
+  border: 2px solid rgb(122, 133, 160);
+  border-radius: 8px;
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-style: bold;
+}
+
+.reload-button:hover {
+  background: rgb(122, 133, 160);
+  border: 2px solid rgb(122, 133, 160);
+  border-radius: 8px;
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-style: bold;
+  cursor: pointer;
+}
+
+
+@media (max-width: 750px) {
+  .title-line {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    /* font */
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-style: normal;
+  }
+
+  .svg-star {
+    font-size: 25px;
+  }
+}
